@@ -27,7 +27,7 @@
 .home .carousel-item .container{
 	position: absolute;
 	left:100px;
-	top:50%;
+	top:40%;
 	width: 700px;
 	transform: translate(0,-50%);
 	font: system-ui;
@@ -107,18 +107,18 @@ body {
 .container-fluid .logo {
 	font-family: salsa;
 	color: #ffffff;
-	display: flex; /* Use flexbox for centering */
-  	justify-content: center; /* Center the content horizontally */
+	display: flex;
+  	justify-content: center;
   	align-items: center; 
-	top: 50%;
+	top: 40%;
 	margin-top: 17px;
 }
 .container-fluid .logo1 {
 	font-family: salsa;
 	font-size: 12px;
 	color: #ffffff;
-	display: flex; /* Use flexbox for centering */
-  	justify-content: center; /* Center the content horizontally */
+	display: flex;
+  	justify-content: center;
   	align-items: center; 
 	left: 50%;
 	top: 20%;
@@ -386,12 +386,12 @@ span, i, button, a{
 }
 
 .section h1{
-    font-size:40px!important;
-    line-height:55px!important;
+    font-size:40px;
+    line-height:55px;
 }
 
 .navbar-brand{
-    color: #000!important;
+    color: #000;
 	font-weight:600;
 }
 
@@ -401,8 +401,8 @@ span, i, button, a{
 }
 @media  only screen and (max-width:576px){
 .search-model-form input {
-    width: 257px!important;
-    font-size: 20px!important;
+    width: 257pxt;
+    font-size: 20px;
     border: none;
     border-bottom: 2px solid #333;
     background: none;
@@ -411,7 +411,7 @@ span, i, button, a{
 }
 
 /*responsive*/
-@media(max-width: 1080px){
+@media(max-width: 500px){
   .home .carousel-item h2{
   	font-size: 45px;
   }
@@ -434,7 +434,7 @@ span, i, button, a{
 }
 .home .carousel-item h2{
 	font-family: salsa;
-	font-size: 64px;
+	font-size: 24px;
 	color: #ffffff;
 	margin:0 0 10px;
 	opacity: 0;
@@ -444,7 +444,7 @@ span, i, button, a{
 
 .home .carousel-item h1{
 	font-family: salsa;
-	font-size: 24px;
+	font-size: 18px;
 	color: #ffffff;
 	margin-bottom: 30px;
 	opacity: 0;
@@ -453,22 +453,49 @@ span, i, button, a{
 }
 
 .home .carousel-item a{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
+	font-size: 12px;
 	color: #ffffff;
 	margin-bottom: 30px;
 	border: white;
 
 }
 .home .carousel-item p{
-	font-size: 20px;
+	width: 100%;
+	font-size: 14px;
 	margin:0;
 	color: #eeeeee;
 	opacity:0;
 	margin-bottom: 25px;
 	text-align: center;
+	padding: 20px;
+}
+.home .carousel-item .container{
+	position: absolute;
+	left:0;
+	top:30%;
+	width: 412px;
+	transform: translate(0,-50%);
+	font: system-ui;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.home .carousel-indicators li{
+	height: 150px; 	
+	width: 100px;
+}
+.home .carousel-indicators li:nth-child(1){
+	left: 3%
+}
+
+.home .carousel-indicators li:nth-child(2){
+	left: calc(3% + 120px)
+}
+
+.home .carousel-indicators li:nth-child(3){
+	left: calc(3% + 240px)
+}
+.home .carousel-controls{
+	left: 5%;
 }
 }
 
